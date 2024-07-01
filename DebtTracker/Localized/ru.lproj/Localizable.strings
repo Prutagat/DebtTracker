@@ -1,0 +1,75 @@
+/* 
+  Localizable.strings
+  DebtTracker
+
+  Created by Алексей Голованов on 18.05.2024.
+  
+*/
+
+// Основное
+"Debts" = "Долги";
+"Me" = "Я";
+"To me" = "Мне";
+"History" = "История";
+"Profile" = "Профиль";
+"Settings" = "Настройки";
+"Other" = "Прочее";
+"Amount" = "Сумма";
+"Title" = "Заголовок";
+"Description" = "Описание";
+"Cancel" = "Отмена";
+"Owner" = "Владелец";
+"Borrower" = "Заемщик";
+"Sign up" = "Зарегистрироваться";
+"Sign in" = "Войти";
+"Name" = "Имя";
+"Email" = "Почта";
+"Password" = "Пароль";
+"Continue" = "Продолжить";
+"Error" = "Ошибка";
+"Exit" = "Выход";
+"Registration" = "Регистрация";
+"Repeat password" = "Повторить пароль";
+"isArchived" = "Архивная запись";
+"Done" = "Готово";
+"Edit" = "Изменить";
+"Vacation" = "Отпуск";
+"Delete" = "Удалить";
+"Theme" = "Тема";
+"light" = "светлая";
+"dark" = "темная";
+"system" = "системная";
+"Search" = "Поиск";
+
+// Надписи
+"Debt is repaid" = "Долг погашен";
+"Have an account?" = "Уже есть аккаунт?";
+"Enable Face ID" = "Включить Face ID";
+"Select Theme" = "Текущая тема";
+"Search borrower" = "Найти заемщика";
+"New debt" = "Новый долг";
+
+// Ошибки - AuthenticationService
+"Passwords do not match." = "Пароли не совпадают";
+"The email address is badly formatted." = "Адрес электронной почты имеет неправильный формат";
+"The email address is already in use by another account." = "Адрес электронной почты уже используется другим аккаунтом";
+"The password must be 6 characters long or more." = "Пароль должен содержать не менее 6 символов";
+"The supplied auth credential is malformed or has expired." = "Предоставленные учетные данные недействительны или истекли";
+
+// Ошибки - DependencyService
+"Failed to parse Dependency." = "Не удалось разобрать зависимость";
+"Document not found." = "Документ не найден";
+
+"" = "";
+"" = "";
+"" = "";
+"" = "";
+"" = "";
+"" = "";
+"" = "";
+"" = "";
+"" = "";
+"" = "";
+"" = "";
+"" = "";
+"" = "";

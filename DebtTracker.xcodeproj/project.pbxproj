@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8120B1BA2C1F741F00286E6C /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8120B1B92C1F741F00286E6C /* UserService.swift */; };
+		814B73282BF936A300A7DE26 /* DebtTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814B73272BF936A300A7DE26 /* DebtTrackerApp.swift */; };
+		814B732C2BF936A400A7DE26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814B732B2BF936A400A7DE26 /* Assets.xcassets */; };
+		814B732F2BF936A400A7DE26 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814B732E2BF936A400A7DE26 /* Preview Assets.xcassets */; };
+		814B73362BF938FD00A7DE26 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 814B73352BF938FD00A7DE26 /* GoogleService-Info.plist */; };
+		814B734C2BF93C4400A7DE26 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 814B734B2BF93C4400A7DE26 /* FirebaseAuth */; };
+		814B734E2BF93C4400A7DE26 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 814B734D2BF93C4400A7DE26 /* FirebaseFirestore */; };
+		814B73502BF93CA400A7DE26 /* Debt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814B734F2BF93CA400A7DE26 /* Debt.swift */; };
+		814B73522BF93CF200A7DE26 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814B73512BF93CF200A7DE26 /* Profile.swift */; };
+		814B73542BF93D2700A7DE26 /* Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814B73532BF93D2700A7DE26 /* Localized.swift */; };
+		814B73562BF93D6C00A7DE26 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814B73552BF93D6C00A7DE26 /* AuthenticationService.swift */; };
+		814B73582BF93D9B00A7DE26 /* DebtService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814B73572BF93D9B00A7DE26 /* DebtService.swift */; };
+		814B73652BF9403E00A7DE26 /* CustomTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814B73612BF9403D00A7DE26 /* CustomTextFieldStyle.swift */; };
+		814B73662BF9403E00A7DE26 /* CustomButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814B73622BF9403D00A7DE26 /* CustomButtonStyle.swift */; };
+		814B73672BF9403E00A7DE26 /* CustomTextStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814B73632BF9403E00A7DE26 /* CustomTextStack.swift */; };
+		814B73682BF9403E00A7DE26 /* CustomTextFieldStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814B73642BF9403E00A7DE26 /* CustomTextFieldStack.swift */; };
+		814B736A2BF9417700A7DE26 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814B73692BF9417700A7DE26 /* AppState.swift */; };
+		814B736F2BF9430900A7DE26 /* AuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814B736C2BF9430800A7DE26 /* AuthorizationView.swift */; };
+		814B73702BF9430900A7DE26 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814B736D2BF9430800A7DE26 /* SignInView.swift */; };
+		814B73712BF9430900A7DE26 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814B736E2BF9430900A7DE26 /* SignUpView.swift */; };
+		814B73782BF9448000A7DE26 /* OtherRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814B73732BF9448000A7DE26 /* OtherRow.swift */; };
+		814B73792BF9448000A7DE26 /* OtherSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814B73742BF9448000A7DE26 /* OtherSection.swift */; };
+		814B737A2BF9448000A7DE26 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814B73752BF9448000A7DE26 /* ProfileView.swift */; };
+		814B737B2BF9448000A7DE26 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814B73762BF9448000A7DE26 /* SettingsView.swift */; };
+		814B73822BF944F500A7DE26 /* DebtDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814B737D2BF944F400A7DE26 /* DebtDetail.swift */; };
+		814B73832BF944F500A7DE26 /* DebtList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814B737E2BF944F500A7DE26 /* DebtList.swift */; };
+		814B73842BF944F500A7DE26 /* DebtRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814B737F2BF944F500A7DE26 /* DebtRow.swift */; };
+		814B73852BF944F500A7DE26 /* DebtEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814B73802BF944F500A7DE26 /* DebtEditor.swift */; };
+		814B73862BF944F500A7DE26 /* DebtSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814B73812BF944F500A7DE26 /* DebtSection.swift */; };
+		814B73882BF947E100A7DE26 /* DebtsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814B73872BF947E100A7DE26 /* DebtsView.swift */; };
+		814B738B2BF948FD00A7DE26 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 814B73892BF948FD00A7DE26 /* Localizable.strings */; };
+		814B738F2BF94FAE00A7DE26 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 814B738D2BF94FAE00A7DE26 /* InfoPlist.strings */; };
+		814E168E2C333E9C004F3FBC /* CustomTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814E168D2C333E9C004F3FBC /* CustomTextButton.swift */; };
+		81699D7D2C31F27400BACFBE /* UserSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81699D7C2C31F27400BACFBE /* UserSearchView.swift */; };
+		818822EE2C0CFA4C0039C43E /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818822ED2C0CFA4C0039C43E /* ThemeManager.swift */; };
+		8189F2772C28392B0037C128 /* FaceIDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8189F2762C28392B0037C128 /* FaceIDManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8120B1B92C1F741F00286E6C /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		814B73242BF936A300A7DE26 /* DebtTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DebtTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		814B73272BF936A300A7DE26 /* DebtTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebtTrackerApp.swift; sourceTree = "<group>"; };
+		814B732B2BF936A400A7DE26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		814B732E2BF936A400A7DE26 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		814B73352BF938FD00A7DE26 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		814B734F2BF93CA400A7DE26 /* Debt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debt.swift; sourceTree = "<group>"; };
+		814B73512BF93CF200A7DE26 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		814B73532BF93D2700A7DE26 /* Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localized.swift; sourceTree = "<group>"; };
+		814B73552BF93D6C00A7DE26 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		814B73572BF93D9B00A7DE26 /* DebtService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebtService.swift; sourceTree = "<group>"; };
+		814B73612BF9403D00A7DE26 /* CustomTextFieldStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextFieldStyle.swift; sourceTree = "<group>"; };
+		814B73622BF9403D00A7DE26 /* CustomButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButtonStyle.swift; sourceTree = "<group>"; };
+		814B73632BF9403E00A7DE26 /* CustomTextStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextStack.swift; sourceTree = "<group>"; };
+		814B73642BF9403E00A7DE26 /* CustomTextFieldStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextFieldStack.swift; sourceTree = "<group>"; };
+		814B73692BF9417700A7DE26 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		814B736C2BF9430800A7DE26 /* AuthorizationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationView.swift; sourceTree = "<group>"; };
+		814B736D2BF9430800A7DE26 /* SignInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		814B736E2BF9430900A7DE26 /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		814B73732BF9448000A7DE26 /* OtherRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherRow.swift; sourceTree = "<group>"; };
+		814B73742BF9448000A7DE26 /* OtherSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherSection.swift; sourceTree = "<group>"; };
+		814B73752BF9448000A7DE26 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		814B73762BF9448000A7DE26 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		814B737D2BF944F400A7DE26 /* DebtDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebtDetail.swift; sourceTree = "<group>"; };
+		814B737E2BF944F500A7DE26 /* DebtList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebtList.swift; sourceTree = "<group>"; };
+		814B737F2BF944F500A7DE26 /* DebtRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebtRow.swift; sourceTree = "<group>"; };
+		814B73802BF944F500A7DE26 /* DebtEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebtEditor.swift; sourceTree = "<group>"; };
+		814B73812BF944F500A7DE26 /* DebtSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebtSection.swift; sourceTree = "<group>"; };
+		814B73872BF947E100A7DE26 /* DebtsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebtsView.swift; sourceTree = "<group>"; };
+		814B738C2BF9490A00A7DE26 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		814B73902BF94FC300A7DE26 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		814E168D2C333E9C004F3FBC /* CustomTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextButton.swift; sourceTree = "<group>"; };
+		81699D7C2C31F27400BACFBE /* UserSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchView.swift; sourceTree = "<group>"; };
+		818822ED2C0CFA4C0039C43E /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		8189F2762C28392B0037C128 /* FaceIDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIDManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		814B73212BF936A300A7DE26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				814B734C2BF93C4400A7DE26 /* FirebaseAuth in Frameworks */,
+				814B734E2BF93C4400A7DE26 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		814B731B2BF936A300A7DE26 = {
+			isa = PBXGroup;
+			children = (
+				814B73262BF936A300A7DE26 /* DebtTracker */,
+				814B73252BF936A300A7DE26 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		814B73252BF936A300A7DE26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				814B73242BF936A300A7DE26 /* DebtTracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		814B73262BF936A300A7DE26 /* DebtTracker */ = {
+			isa = PBXGroup;
+			children = (
+				814B73692BF9417700A7DE26 /* AppState.swift */,
+				814B73272BF936A300A7DE26 /* DebtTrackerApp.swift */,
+				8189F2752C2839110037C128 /* Managers */,
+				814B73472BF93AC300A7DE26 /* Services */,
+				814B73482BF93ACD00A7DE26 /* Style */,
+				814B73462BF93A8D00A7DE26 /* Model */,
+				814B73492BF93AF300A7DE26 /* Views */,
+				814B73372BF9391300A7DE26 /* Resources */,
+				814B73432BF9393800A7DE26 /* Localized */,
+				814B732D2BF936A400A7DE26 /* Preview Content */,
+			);
+			path = DebtTracker;
+			sourceTree = "<group>";
+		};
+		814B732D2BF936A400A7DE26 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				814B732E2BF936A400A7DE26 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		814B73372BF9391300A7DE26 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				814B732B2BF936A400A7DE26 /* Assets.xcassets */,
+				814B73352BF938FD00A7DE26 /* GoogleService-Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		814B73432BF9393800A7DE26 /* Localized */ = {
+			isa = PBXGroup;
+			children = (
+				814B73532BF93D2700A7DE26 /* Localized.swift */,
+				814B73892BF948FD00A7DE26 /* Localizable.strings */,
+				814B738D2BF94FAE00A7DE26 /* InfoPlist.strings */,
+			);
+			path = Localized;
+			sourceTree = "<group>";
+		};
+		814B73462BF93A8D00A7DE26 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				814B734F2BF93CA400A7DE26 /* Debt.swift */,
+				814B73512BF93CF200A7DE26 /* Profile.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		814B73472BF93AC300A7DE26 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				814B73552BF93D6C00A7DE26 /* AuthenticationService.swift */,
+				814B73572BF93D9B00A7DE26 /* DebtService.swift */,
+				8120B1B92C1F741F00286E6C /* UserService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		814B73482BF93ACD00A7DE26 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				814B73622BF9403D00A7DE26 /* CustomButtonStyle.swift */,
+				814B73612BF9403D00A7DE26 /* CustomTextFieldStyle.swift */,
+				814B73632BF9403E00A7DE26 /* CustomTextStack.swift */,
+				814B73642BF9403E00A7DE26 /* CustomTextFieldStack.swift */,
+				814E168D2C333E9C004F3FBC /* CustomTextButton.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		814B73492BF93AF300A7DE26 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				814B736B2BF942E900A7DE26 /* AuthorizationFlow */,
+				814B73722BF9442500A7DE26 /* DebtFlow */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		814B736B2BF942E900A7DE26 /* AuthorizationFlow */ = {
+			isa = PBXGroup;
+			children = (
+				814B736C2BF9430800A7DE26 /* AuthorizationView.swift */,
+				814B736D2BF9430800A7DE26 /* SignInView.swift */,
+				814B736E2BF9430900A7DE26 /* SignUpView.swift */,
+			);
+			path = AuthorizationFlow;
+			sourceTree = "<group>";
+		};
+		814B73722BF9442500A7DE26 /* DebtFlow */ = {
+			isa = PBXGroup;
+			children = (
+				814B73872BF947E100A7DE26 /* DebtsView.swift */,
+				814B737C2BF944CD00A7DE26 /* Debts */,
+				814B73772BF9448000A7DE26 /* Other */,
+			);
+			path = DebtFlow;
+			sourceTree = "<group>";
+		};
+		814B73772BF9448000A7DE26 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				814B73742BF9448000A7DE26 /* OtherSection.swift */,
+				814B73732BF9448000A7DE26 /* OtherRow.swift */,
+				814B73752BF9448000A7DE26 /* ProfileView.swift */,
+				814B73762BF9448000A7DE26 /* SettingsView.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		814B737C2BF944CD00A7DE26 /* Debts */ = {
+			isa = PBXGroup;
+			children = (
+				814B73812BF944F500A7DE26 /* DebtSection.swift */,
+				814B737E2BF944F500A7DE26 /* DebtList.swift */,
+				814B737F2BF944F500A7DE26 /* DebtRow.swift */,
+				814B737D2BF944F400A7DE26 /* DebtDetail.swift */,
+				814B73802BF944F500A7DE26 /* DebtEditor.swift */,
+				81699D7C2C31F27400BACFBE /* UserSearchView.swift */,
+			);
+			path = Debts;
+			sourceTree = "<group>";
+		};
+		8189F2752C2839110037C128 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				818822ED2C0CFA4C0039C43E /* ThemeManager.swift */,
+				8189F2762C28392B0037C128 /* FaceIDManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		814B73232BF936A300A7DE26 /* DebtTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 814B73322BF936A400A7DE26 /* Build configuration list for PBXNativeTarget "DebtTracker" */;
+			buildPhases = (
+				814B73202BF936A300A7DE26 /* Sources */,
+				814B73212BF936A300A7DE26 /* Frameworks */,
+				814B73222BF936A300A7DE26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DebtTracker;
+			packageProductDependencies = (
+				814B734B2BF93C4400A7DE26 /* FirebaseAuth */,
+				814B734D2BF93C4400A7DE26 /* FirebaseFirestore */,
+			);
+			productName = DebtTracker;
+			productReference = 814B73242BF936A300A7DE26 /* DebtTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		814B731C2BF936A300A7DE26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					814B73232BF936A300A7DE26 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 814B731F2BF936A300A7DE26 /* Build configuration list for PBXProject "DebtTracker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ru,
+			);
+			mainGroup = 814B731B2BF936A300A7DE26;
+			packageReferences = (
+				814B734A2BF93C4400A7DE26 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 814B73252BF936A300A7DE26 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				814B73232BF936A300A7DE26 /* DebtTracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		814B73222BF936A300A7DE26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				814B732F2BF936A400A7DE26 /* Preview Assets.xcassets in Resources */,
+				814B738B2BF948FD00A7DE26 /* Localizable.strings in Resources */,
+				814B732C2BF936A400A7DE26 /* Assets.xcassets in Resources */,
+				814B73362BF938FD00A7DE26 /* GoogleService-Info.plist in Resources */,
+				814B738F2BF94FAE00A7DE26 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		814B73202BF936A300A7DE26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				814B73662BF9403E00A7DE26 /* CustomButtonStyle.swift in Sources */,
+				814B73782BF9448000A7DE26 /* OtherRow.swift in Sources */,
+				814B73832BF944F500A7DE26 /* DebtList.swift in Sources */,
+				814B73542BF93D2700A7DE26 /* Localized.swift in Sources */,
+				814B737B2BF9448000A7DE26 /* SettingsView.swift in Sources */,
+				814B736F2BF9430900A7DE26 /* AuthorizationView.swift in Sources */,
+				8120B1BA2C1F741F00286E6C /* UserService.swift in Sources */,
+				814B73792BF9448000A7DE26 /* OtherSection.swift in Sources */,
+				818822EE2C0CFA4C0039C43E /* ThemeManager.swift in Sources */,
+				814B73502BF93CA400A7DE26 /* Debt.swift in Sources */,
+				8189F2772C28392B0037C128 /* FaceIDManager.swift in Sources */,
+				814B73862BF944F500A7DE26 /* DebtSection.swift in Sources */,
+				814B73652BF9403E00A7DE26 /* CustomTextFieldStyle.swift in Sources */,
+				814B73522BF93CF200A7DE26 /* Profile.swift in Sources */,
+				814B73882BF947E100A7DE26 /* DebtsView.swift in Sources */,
+				814B73562BF93D6C00A7DE26 /* AuthenticationService.swift in Sources */,
+				814B737A2BF9448000A7DE26 /* ProfileView.swift in Sources */,
+				814B73822BF944F500A7DE26 /* DebtDetail.swift in Sources */,
+				814B73852BF944F500A7DE26 /* DebtEditor.swift in Sources */,
+				81699D7D2C31F27400BACFBE /* UserSearchView.swift in Sources */,
+				814B736A2BF9417700A7DE26 /* AppState.swift in Sources */,
+				814B73282BF936A300A7DE26 /* DebtTrackerApp.swift in Sources */,
+				814B73682BF9403E00A7DE26 /* CustomTextFieldStack.swift in Sources */,
+				814B73712BF9430900A7DE26 /* SignUpView.swift in Sources */,
+				814B73842BF944F500A7DE26 /* DebtRow.swift in Sources */,
+				814B73582BF93D9B00A7DE26 /* DebtService.swift in Sources */,
+				814E168E2C333E9C004F3FBC /* CustomTextButton.swift in Sources */,
+				814B73672BF9403E00A7DE26 /* CustomTextStack.swift in Sources */,
+				814B73702BF9430900A7DE26 /* SignInView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		814B73892BF948FD00A7DE26 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				814B738C2BF9490A00A7DE26 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		814B738D2BF94FAE00A7DE26 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				814B73902BF94FC300A7DE26 /* ru */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		814B73302BF936A400A7DE26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		814B73312BF936A400A7DE26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		814B73332BF936A400A7DE26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DebtTracker/Preview Content\"";
+				DEVELOPMENT_TEAM = 73TQ24GYW9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "For convenient and secure access to the app, we use Face ID to verify your identity.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = golovanov.DebtTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		814B73342BF936A400A7DE26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DebtTracker/Preview Content\"";
+				DEVELOPMENT_TEAM = 73TQ24GYW9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "For convenient and secure access to the app, we use Face ID to verify your identity.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = golovanov.DebtTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		814B731F2BF936A300A7DE26 /* Build configuration list for PBXProject "DebtTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				814B73302BF936A400A7DE26 /* Debug */,
+				814B73312BF936A400A7DE26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		814B73322BF936A400A7DE26 /* Build configuration list for PBXNativeTarget "DebtTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				814B73332BF936A400A7DE26 /* Debug */,
+				814B73342BF936A400A7DE26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		814B734A2BF93C4400A7DE26 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 10.26.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		814B734B2BF93C4400A7DE26 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 814B734A2BF93C4400A7DE26 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		814B734D2BF93C4400A7DE26 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 814B734A2BF93C4400A7DE26 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 814B731C2BF936A300A7DE26 /* Project object */;
+}
