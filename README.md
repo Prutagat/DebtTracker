@@ -45,17 +45,20 @@ DebtTracker - это приложение для управления долга
 
 - `AppState.swift`: Содержит состояние приложения и управляет глобальными состояниями.
 - `DebtTrackerApp.swift`: Точка входа в приложение.
+- `MainView.swift`: Главный экран приложения после авторизации.
 
 ### Менеджеры
 
 - `ThemeManager.swift`: Управляет темами приложения.
-- `FaceIDManager.swift`: Обрабатывает аутентификацию с помощью Face ID. (временно не работает)
+- `FaceIDManager.swift`: Обрабатывает аутентификацию с помощью Face ID.
+- `DebtManager.swift`: Управляет получением текущих долгов (мои, мне, архивные).
 
 ### Сервисы
 
 - `AuthenticationService.swift`: Управляет аутентификацией пользователей.
 - `DebtService.swift`: Сервис для управления долгами.
 - `UserService.swift`: Сервис для управления пользователями.
+- `CurrencyRateService.swift`: Сервис для работы с курсами валют.
 
 ### Стили
 
@@ -64,6 +67,8 @@ DebtTracker - это приложение для управления долга
 - `CustomTextStack.swift`: Настраиваемый стек текстовых элементов.
 - `CustomTextFieldStack.swift`: Стек для текстовых полей с настройками.
 - `CustomTextButton.swift`: Текст с кнопкой и изображением.
+- `CustomCurrencyRepresentationStyle.swift`: Стиль для представления валюты.
+- `CustomHeaderSection.swift`: Настраиваемый заголовок секции.
 
 ### Модели
 
@@ -78,11 +83,12 @@ DebtTracker - это приложение для управления долга
 - `SignInView.swift`: Экран входа.
 - `SignUpView.swift`: Экран регистрации.
 
-#### DebtFlow
+#### Debts
 
 - `DebtsView.swift`: Главный экран с долгами.
+- `CurrencyRateSection.swift`: Секция для отображения курса валют.
 
-#### Debts
+#### Debt
 
 - `DebtSection.swift`: Секция для отображения долгов.
 - `DebtList.swift`: Список долгов.
@@ -95,7 +101,27 @@ DebtTracker - это приложение для управления долга
 
 - `OtherSection.swift`: Другая секция.
 - `OtherRow.swift`: Другая строка.
+
+#### Statistics
+
+- `StatisticsView.swift`: Экран с общей статистикой.
+- `DebitCreditSection.swift`: Секция дебета и кредита.
+- `SectorMarkView.swift`: Вид для отображения секторальной метки.
+
+#### Profile
+
 - `ProfileView.swift`: Экран профиля пользователя.
+
+#### Settings
+
+- `SettingsView.swift`: Экран настроек приложения.
+
+### Локализация
+
+- `Localized.swift`: Файл для работы с локализацией.
+- `Localizable.strings`: Файл локализации строк.
+- `InfoPlist.strings`: Файл локализации информационного plist.
+
 
 ## Вклад в проект
 

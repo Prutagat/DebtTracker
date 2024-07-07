@@ -43,6 +43,15 @@
 		81699D7D2C31F27400BACFBE /* UserSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81699D7C2C31F27400BACFBE /* UserSearchView.swift */; };
 		818822EE2C0CFA4C0039C43E /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818822ED2C0CFA4C0039C43E /* ThemeManager.swift */; };
 		8189F2772C28392B0037C128 /* FaceIDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8189F2762C28392B0037C128 /* FaceIDManager.swift */; };
+		81EBC5792C3A98DC00E70355 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EBC5782C3A98DC00E70355 /* MainView.swift */; };
+		81EBC57F2C3ADE6600E70355 /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EBC57E2C3ADE6600E70355 /* StatisticsView.swift */; };
+		81EBC5832C3AE02100E70355 /* CurrencyRateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EBC5822C3AE02100E70355 /* CurrencyRateService.swift */; };
+		81EBC5852C3AEA9700E70355 /* CurrencyRateSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EBC5842C3AEA9700E70355 /* CurrencyRateSection.swift */; };
+		81EBC5872C3AEE3000E70355 /* CustomCurrencyRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EBC5862C3AEE3000E70355 /* CustomCurrencyRepresentation.swift */; };
+		81EBC5892C3B041500E70355 /* DebtManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EBC5882C3B041500E70355 /* DebtManager.swift */; };
+		81EBC58B2C3B09F900E70355 /* DebitCreditSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EBC58A2C3B09F900E70355 /* DebitCreditSection.swift */; };
+		81EBC58E2C3B0C7400E70355 /* CustomHeaderSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EBC58D2C3B0C7400E70355 /* CustomHeaderSection.swift */; };
+		81EBC5922C3B10B200E70355 /* SectorMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EBC5912C3B10B200E70355 /* SectorMarkView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +90,15 @@
 		81699D7C2C31F27400BACFBE /* UserSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchView.swift; sourceTree = "<group>"; };
 		818822ED2C0CFA4C0039C43E /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		8189F2762C28392B0037C128 /* FaceIDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIDManager.swift; sourceTree = "<group>"; };
+		81EBC5782C3A98DC00E70355 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		81EBC57E2C3ADE6600E70355 /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		81EBC5822C3AE02100E70355 /* CurrencyRateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRateService.swift; sourceTree = "<group>"; };
+		81EBC5842C3AEA9700E70355 /* CurrencyRateSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRateSection.swift; sourceTree = "<group>"; };
+		81EBC5862C3AEE3000E70355 /* CustomCurrencyRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCurrencyRepresentation.swift; sourceTree = "<group>"; };
+		81EBC5882C3B041500E70355 /* DebtManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebtManager.swift; sourceTree = "<group>"; };
+		81EBC58A2C3B09F900E70355 /* DebitCreditSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebitCreditSection.swift; sourceTree = "<group>"; };
+		81EBC58D2C3B0C7400E70355 /* CustomHeaderSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeaderSection.swift; sourceTree = "<group>"; };
+		81EBC5912C3B10B200E70355 /* SectorMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectorMarkView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +135,7 @@
 			children = (
 				814B73692BF9417700A7DE26 /* AppState.swift */,
 				814B73272BF936A300A7DE26 /* DebtTrackerApp.swift */,
+				81EBC5782C3A98DC00E70355 /* MainView.swift */,
 				8189F2752C2839110037C128 /* Managers */,
 				814B73472BF93AC300A7DE26 /* Services */,
 				814B73482BF93ACD00A7DE26 /* Style */,
@@ -171,6 +190,7 @@
 				814B73552BF93D6C00A7DE26 /* AuthenticationService.swift */,
 				814B73572BF93D9B00A7DE26 /* DebtService.swift */,
 				8120B1B92C1F741F00286E6C /* UserService.swift */,
+				81EBC5822C3AE02100E70355 /* CurrencyRateService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -183,6 +203,8 @@
 				814B73632BF9403E00A7DE26 /* CustomTextStack.swift */,
 				814B73642BF9403E00A7DE26 /* CustomTextFieldStack.swift */,
 				814E168D2C333E9C004F3FBC /* CustomTextButton.swift */,
+				81EBC5862C3AEE3000E70355 /* CustomCurrencyRepresentation.swift */,
+				81EBC58D2C3B0C7400E70355 /* CustomHeaderSection.swift */,
 			);
 			path = Style;
 			sourceTree = "<group>";
@@ -191,7 +213,10 @@
 			isa = PBXGroup;
 			children = (
 				814B736B2BF942E900A7DE26 /* AuthorizationFlow */,
-				814B73722BF9442500A7DE26 /* DebtFlow */,
+				814B73722BF9442500A7DE26 /* Debts */,
+				81EBC57D2C3ADDAA00E70355 /* Statistics */,
+				81EBC57B2C3A9E7300E70355 /* Profile */,
+				81EBC57A2C3A9E2100E70355 /* Settings */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -206,14 +231,15 @@
 			path = AuthorizationFlow;
 			sourceTree = "<group>";
 		};
-		814B73722BF9442500A7DE26 /* DebtFlow */ = {
+		814B73722BF9442500A7DE26 /* Debts */ = {
 			isa = PBXGroup;
 			children = (
 				814B73872BF947E100A7DE26 /* DebtsView.swift */,
-				814B737C2BF944CD00A7DE26 /* Debts */,
+				81EBC5842C3AEA9700E70355 /* CurrencyRateSection.swift */,
+				814B737C2BF944CD00A7DE26 /* Debt */,
 				814B73772BF9448000A7DE26 /* Other */,
 			);
-			path = DebtFlow;
+			path = Debts;
 			sourceTree = "<group>";
 		};
 		814B73772BF9448000A7DE26 /* Other */ = {
@@ -221,13 +247,11 @@
 			children = (
 				814B73742BF9448000A7DE26 /* OtherSection.swift */,
 				814B73732BF9448000A7DE26 /* OtherRow.swift */,
-				814B73752BF9448000A7DE26 /* ProfileView.swift */,
-				814B73762BF9448000A7DE26 /* SettingsView.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
 		};
-		814B737C2BF944CD00A7DE26 /* Debts */ = {
+		814B737C2BF944CD00A7DE26 /* Debt */ = {
 			isa = PBXGroup;
 			children = (
 				814B73812BF944F500A7DE26 /* DebtSection.swift */,
@@ -237,7 +261,7 @@
 				814B73802BF944F500A7DE26 /* DebtEditor.swift */,
 				81699D7C2C31F27400BACFBE /* UserSearchView.swift */,
 			);
-			path = Debts;
+			path = Debt;
 			sourceTree = "<group>";
 		};
 		8189F2752C2839110037C128 /* Managers */ = {
@@ -245,8 +269,35 @@
 			children = (
 				818822ED2C0CFA4C0039C43E /* ThemeManager.swift */,
 				8189F2762C28392B0037C128 /* FaceIDManager.swift */,
+				81EBC5882C3B041500E70355 /* DebtManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		81EBC57A2C3A9E2100E70355 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				814B73762BF9448000A7DE26 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		81EBC57B2C3A9E7300E70355 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				814B73752BF9448000A7DE26 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		81EBC57D2C3ADDAA00E70355 /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				81EBC57E2C3ADE6600E70355 /* StatisticsView.swift */,
+				81EBC58A2C3B09F900E70355 /* DebitCreditSection.swift */,
+				81EBC5912C3B10B200E70355 /* SectorMarkView.swift */,
+			);
+			path = Statistics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,20 +385,28 @@
 				814B73782BF9448000A7DE26 /* OtherRow.swift in Sources */,
 				814B73832BF944F500A7DE26 /* DebtList.swift in Sources */,
 				814B73542BF93D2700A7DE26 /* Localized.swift in Sources */,
+				81EBC5872C3AEE3000E70355 /* CustomCurrencyRepresentation.swift in Sources */,
 				814B737B2BF9448000A7DE26 /* SettingsView.swift in Sources */,
 				814B736F2BF9430900A7DE26 /* AuthorizationView.swift in Sources */,
 				8120B1BA2C1F741F00286E6C /* UserService.swift in Sources */,
+				81EBC57F2C3ADE6600E70355 /* StatisticsView.swift in Sources */,
 				814B73792BF9448000A7DE26 /* OtherSection.swift in Sources */,
 				818822EE2C0CFA4C0039C43E /* ThemeManager.swift in Sources */,
+				81EBC58B2C3B09F900E70355 /* DebitCreditSection.swift in Sources */,
 				814B73502BF93CA400A7DE26 /* Debt.swift in Sources */,
 				8189F2772C28392B0037C128 /* FaceIDManager.swift in Sources */,
 				814B73862BF944F500A7DE26 /* DebtSection.swift in Sources */,
 				814B73652BF9403E00A7DE26 /* CustomTextFieldStyle.swift in Sources */,
+				81EBC5852C3AEA9700E70355 /* CurrencyRateSection.swift in Sources */,
+				81EBC5922C3B10B200E70355 /* SectorMarkView.swift in Sources */,
+				81EBC5792C3A98DC00E70355 /* MainView.swift in Sources */,
 				814B73522BF93CF200A7DE26 /* Profile.swift in Sources */,
 				814B73882BF947E100A7DE26 /* DebtsView.swift in Sources */,
 				814B73562BF93D6C00A7DE26 /* AuthenticationService.swift in Sources */,
 				814B737A2BF9448000A7DE26 /* ProfileView.swift in Sources */,
 				814B73822BF944F500A7DE26 /* DebtDetail.swift in Sources */,
+				81EBC5892C3B041500E70355 /* DebtManager.swift in Sources */,
+				81EBC5832C3AE02100E70355 /* CurrencyRateService.swift in Sources */,
 				814B73852BF944F500A7DE26 /* DebtEditor.swift in Sources */,
 				81699D7D2C31F27400BACFBE /* UserSearchView.swift in Sources */,
 				814B736A2BF9417700A7DE26 /* AppState.swift in Sources */,
@@ -356,6 +415,7 @@
 				814B73712BF9430900A7DE26 /* SignUpView.swift in Sources */,
 				814B73842BF944F500A7DE26 /* DebtRow.swift in Sources */,
 				814B73582BF93D9B00A7DE26 /* DebtService.swift in Sources */,
+				81EBC58E2C3B0C7400E70355 /* CustomHeaderSection.swift in Sources */,
 				814E168E2C333E9C004F3FBC /* CustomTextButton.swift in Sources */,
 				814B73672BF9403E00A7DE26 /* CustomTextStack.swift in Sources */,
 				814B73702BF9430900A7DE26 /* SignInView.swift in Sources */,

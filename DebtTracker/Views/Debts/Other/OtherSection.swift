@@ -9,31 +9,32 @@ import SwiftUI
 
 struct OtherSection: View {
     @EnvironmentObject var appState: AppState
+    @EnvironmentObject var debtManager: DebtManager
     
     var body: some View {
         Section("Other") {
             NavigationLink {
-                DebtList(debts: appState.archivedDebts)
+                DebtList(debts: debtManager.archivedDebts)
                     .navigationTitle("History")
                     .navigationBarTitleDisplayMode(.inline)
             } label: {
-                OtherRow(nameImage: "book.circle", nameDetail: "History")
+                OtherRow(nameImage: "clock", nameDetail: "History")
             }
-            NavigationLink {
-                ProfileView()
-            } label: {
-                OtherRow(nameImage: "person.crop.circle", nameDetail: "Profile")
+            .onAppear() {
+                
             }
-            NavigationLink {
-                SettingsView()
-            } label: {
-                OtherRow(nameImage: "gear", nameDetail: "Settings")
-            }
+        }
+        .onAppear() {
+            fetchDebts()
         }
     }
     
-    private func fetchDependencies() {
-        appState.fetchDebts()
+    private func fetchDebts() {
+        debtManager.fetchDebts(profileID: appState.profileID) { error in
+            if let error {
+                appState.showAlert(with: error)
+            }
+        }
     }
 }
 
@@ -42,6 +43,7 @@ struct OtherSection: View {
         Form {
             OtherSection()
                 .environmentObject(AppState())
+                .environmentObject(DebtManager())
         }
     }
 }

@@ -9,10 +9,10 @@ import SwiftUI
 
 struct DebtEditor: View {
     @EnvironmentObject var appState: AppState
+    @EnvironmentObject var debtManager: DebtManager
     @Environment(\.dismiss) private var dismiss
     @State var debt: Debt
     @State private var debtAmount: String = ""
-    
     @State private var selectedUser: Profile? = nil
     @State private var showSearchSheet: Bool = false
     
@@ -92,12 +92,14 @@ struct DebtEditor: View {
     }
     
     func addDebt() {
+        let debtService = debtManager.debtService
+        
         if debt.id.isEmpty {
-            appState.debtService.create(debt: debt) { result in
+            debtService.create(debt: debt) { result in
                 handleServiceResult(result)
             }
         } else {
-            appState.debtService.update(debt: debt) { result in
+            debtService.update(debt: debt) { result in
                 handleServiceResult(result)
             }
         }
@@ -107,8 +109,8 @@ struct DebtEditor: View {
         DispatchQueue.main.async {
             switch result {
             case .success:
+                fetchDebts()
                 dismiss()
-                appState.fetchDebts()
             case .failure(let error):
                 appState.showAlert(with: error.localizedDescription)
             }
@@ -116,13 +118,23 @@ struct DebtEditor: View {
     }
     
     func deleteDebt() {
-        appState.debtService.delete(debt: debt) { result in
+        let debtService = debtManager.debtService
+        
+        debtService.delete(debt: debt) { result in
             switch result {
             case .success:
-                appState.fetchDebts()
+                fetchDebts()
                 dismiss()
             case .failure(let error):
                 appState.showAlert(with: error.localizedDescription)
+            }
+        }
+    }
+    
+    func fetchDebts(){
+        debtManager.fetchDebts(profileID: appState.profileID) { error in
+            if let error {
+                appState.showAlert(with: error)
             }
         }
     }

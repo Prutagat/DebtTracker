@@ -14,19 +14,14 @@ enum AppTheme: String, CaseIterable, Identifiable{
 }
 
 final class ThemeManager: ObservableObject {
-    static let shared = ThemeManager()
-    
-    @AppStorage("selectedTheme") private var selectedThemeRawValue: String = AppTheme.system.rawValue
-    
-    var selectedTheme: AppTheme {
+    @AppStorage("appTheme") var appTheme: AppTheme = .system {
         didSet {
             applyTheme()
         }
     }
     
     init() {
-        let savedTheme = UserDefaults.standard.string(forKey: "selectedTheme") ?? AppTheme.system.rawValue
-        self.selectedTheme = AppTheme(rawValue: savedTheme) ?? .system
+        applyTheme()
     }
     
     func applyTheme() {
@@ -36,7 +31,7 @@ final class ThemeManager: ObservableObject {
         
         var style: UIUserInterfaceStyle
         
-        switch selectedTheme {
+        switch appTheme {
         case .light:
             style = .light
         case .dark:
@@ -46,17 +41,9 @@ final class ThemeManager: ObservableObject {
         }
         
         windowScene.windows.forEach { window in
-            UIView.transition (with: window, duration: 0.5, options: .transitionCrossDissolve, animations: {
+            UIView.transition(with: window, duration: 0.5, options: .transitionCrossDissolve, animations: {
                 window.overrideUserInterfaceStyle = style
             }, completion: nil)
         }
-        
-        selectedThemeRawValue = selectedTheme.rawValue
-    }
-}
-
-extension ThemeManager: NSCopying {
-    func copy(with zone: NSZone? = nil) -> Any {
-        return self
     }
 }

@@ -14,13 +14,9 @@ struct DebtsView: View {
     var body: some View {
         NavigationView {
             Form {
-                List {
-                    DebtSection()
-                    OtherSection()
-                }
-            }
-            .onAppear {
-                appState.fetchDebts()
+                CurrencyRateSection()
+                DebtSection()
+                OtherSection()
             }
             .navigationTitle("Debts")
             .navigationBarItems(

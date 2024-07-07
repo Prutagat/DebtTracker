@@ -9,20 +9,8 @@ import SwiftUI
 import LocalAuthentication
 
 final class FaceIDManager: ObservableObject {
-    static let shared = FaceIDManager()
-    
-    @AppStorage("faceIDEnable") private var faceIDEnableStorage: Bool = false
-    
-    var faceIDEnable: Bool {
-        didSet {
-            faceIDEnableStorage = faceIDEnable
-        }
-    }
-    
-    init() {
-        let faceIDEnableStorage = UserDefaults.standard.bool(forKey: "faceIDEnable")
-        self.faceIDEnable = faceIDEnableStorage
-    }
+    @AppStorage("faceIDEnable") var faceIDEnable: Bool = false
+    @Published var isAuthenticating = false
         
     func authenticate(completion: @escaping (Bool, String?) -> Void) {
         let context = LAContext()
@@ -42,11 +30,5 @@ final class FaceIDManager: ObservableObject {
         } else {
             completion(false, error?.localizedDescription ?? "Biometrics not available")
         }
-    }
-}
-
-extension FaceIDManager: NSCopying {
-    func copy(with zone: NSZone? = nil) -> Any {
-        return self
     }
 }

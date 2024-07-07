@@ -12,6 +12,7 @@
 "To me" = "Мне";
 "History" = "История";
 "Profile" = "Профиль";
+"Statistics" = "Статистика";
 "Settings" = "Настройки";
 "Other" = "Прочее";
 "Amount" = "Сумма";
@@ -40,6 +41,10 @@
 "dark" = "темная";
 "system" = "системная";
 "Search" = "Поиск";
+"Currency rate" = "Курс валют";
+"Debit" = "Дебет";
+"Credit" = "Кредит";
+"Balance" = "Сальдо";
 
 // Надписи
 "Debt is repaid" = "Долг погашен";
